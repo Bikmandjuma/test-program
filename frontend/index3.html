@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+      <form>
+        <input 
+        id="age"
+        type='number'
+        placeholder='age'
+        />
+        <input 
+        id="Location"
+        type='text'
+        placeholder='Location'
+        />
+      </form>
+      <button onclick="">SUBMIT</button>
+      
+    </div>
+
+    <script>
+        const age = 18;
+        const Location = "Kigali";
+
+        if(age == ""){
+            console.log("enter your age");
+        } else if(Location == "") {
+            console.log("enter your location");
+        } else if (age >= 18 && Location == "Kigali") {
+            console.log("ALLOWED TO VOTE")
+        } else {
+            console.log("not allowed to vote")
+        }
+         
+    </script>
+</body>
+</html>
