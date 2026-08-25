@@ -1,0 +1,218 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+form{
+    border-radius: 9px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    width: 30em;
+    height: 50em;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    div{            
+    height: 5em;
+    width: 20em;
+    
+    }
+
+    h2{
+        color: green;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+
+    input[type = "text"],input[type = "email"],input[type = "number"]{
+        
+        border: 1px solid gray;
+        padding-left: 1em;
+        outline: none;
+        border-radius: 10px;
+        height: 50%;
+        width: 100%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
+    }
+
+    p{
+        font-weight: 800;
+    }
+}
+
+.r{
+    display: flex;
+    flex-direction: column;
+
+    span{
+        position: relative;
+        top: 4px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+.ge {
+    display: flex;
+}
+
+
+.button{
+    width: 100%;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    button{
+        width: 20%;
+        height: 80%;
+        background: green;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.up{
+    border: none;
+    input{
+        border: none;
+        position: relative;
+        top: 5px;
+    }
+} */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+form {
+  border-radius: 12px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 26em;
+  background: white;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  align-items: center;
+}
+
+form h2 {
+  color: green;
+}
+
+form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+label {
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  border: 1px solid #ccc;
+  padding: 0.6em 1em;
+  outline: none;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 0.95em;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 4em;
+}
+
+
+.ge {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8em;
+  margin-top: 0.2em;
+}
+
+.ge input[type="radio"] {
+  cursor: pointer;
+}
+
+.ge label {
+  cursor: pointer;
+  font-weight: normal;
+  margin-right: 1em;
+}
+
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.button button {
+  width: 48%;
+  padding: 0.7em;
+  background: green;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.button button[type="reset"] {
+  background: green;
+}
+
+.button button:hover {
+  opacity: 0.9;
+}

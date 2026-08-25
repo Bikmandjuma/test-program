@@ -10,11 +10,23 @@
         <H1>Election program</H1>
 
         <div>
-            <form action="">
+            <form action="" id="forms">
                 <label for="">Location</label>
-                <input type="text" value="location">
+                <input type="text" id="location" required>
+
+                <label for="">Age</label>
+                <input type="number" id="age" required>
+
+                <label for="">Gender</label>
+                <select name="" id="gender">
+                    <option value="" name="Select Gender">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </div>
+    <script src="election.js"></script>
 </body>
 </html>
